@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane minHeight="500.0" minWidth="700.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.practica.client.ui.ChatController">
+    <columnConstraints>
+        <ColumnConstraints fillWidth="false" hgrow="NEVER" minWidth="50" prefWidth="50" />
+        <ColumnConstraints hgrow="ALWAYS" />
+        <ColumnConstraints prefWidth="300" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints vgrow="ALWAYS" />
+        <RowConstraints prefHeight="50" vgrow="NEVER" />
+    </rowConstraints>
+
+    <VBox GridPane.columnIndex="0" GridPane.rowIndex="1">
+        <Button text="exit" />
+    </VBox>
+    <HBox GridPane.columnIndex="1" GridPane.rowIndex="1">
+        <Button text="camara" onAction="#readCamera"/>
+        <Button text="mic" />
+    </HBox>
+    <FlowPane fx:id="cameraContainer" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+    <VBox GridPane.columnIndex="2" GridPane.rowIndex="0">
+      <children>
+          <HBox>
+              <TextArea fx:id="chatMessage"/>
+              <Button text="enviar" onAction="#sendMessage"/>
+          </HBox>
+      </children></VBox>
+</GridPane>

@@ -1,0 +1,55 @@
+
+
+*{
+    -fx-font-family: 'Jost';
+    -fx-font-size: 14px;
+
+    -background: #fafaf6;
+    -primary: #3d5af1;
+    -secondary: #c7c7c3;
+    -alert: #ff304f
+}
+
+.iconButton{
+    -fx-pref-width: 50;
+    -fx-pref-height: 50;
+    -fx-background-image: url("/icons/arrow-forward-outline.png");
+    -fx-background-color: -secondary;
+    -fx-background-size: 32 32;
+    -fx-fit-to-width: true;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    -fx-border-width: 0px;
+
+}
+.iconButton:hover{
+    -fx-background-color: -primary;
+}
+
+.start-container{
+    -fx-pref-width: 600;
+    -fx-padding: 50 50;
+    -fx-background-color: -background;
+}
+
+.centeredContainer{
+    -fx-alignment: center;
+    -fx-fit-to-width: true;
+}
+
+.inputLabel{
+    -fx-fit-to-width: true;
+    -fx-text-alignment: left;
+
+}
+
+.input{
+    -fx-padding: 5px 15px;
+    -fx-background-radius: 25px;
+    -fx-background-color: -background;
+    -fx-border-color: -secondary;
+    -fx-border-radius: 25px;
+    -fx-border-width: 2px;
+}

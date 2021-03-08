@@ -5,12 +5,12 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.net.Socket;
 
-public class ClientThread extends Thread{
+public class TextSocketThread extends Thread{
 
     private Socket socket;
     private BufferedReader bufferedInput;
 
-    public ClientThread(Socket socket) throws IOException{
+    public TextSocketThread(Socket socket) throws IOException{
         this.socket = socket;
         this.bufferedInput = new BufferedReader(new InputStreamReader(socket.getInputStream()));
     }
